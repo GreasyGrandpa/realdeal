@@ -1,0 +1,47 @@
+/*font-family: 'Orbitron', sans-serif;
+font-family: 'Rajdhani', sans-serif;*/
+/*Master container/ universal styles*/
+.master{
+  width: 100%;
+  height: 1000px;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+*{
+  font-family: 'Orbitron', sans-serif;
+}
+/*first banner*/
+.mainstuff{
+  width: auto;
+  height: auto;
+  padding: .5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mainstuff h1{
+  color: hsla(360, 100%, 100%, 1);
+  font-weight: bold;
+  font-size: 6rem;
+  z-index: 3;
+  text-align: center;
+  font-family: 'Orbitron', sans-serif;
+}
+.videocontainer{
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background-color: hsla(202, 100%, 50%, 1);
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+video{
+  height: auto;
+  width: 87.5rem;
+  opacity: .7;
+  position: absolute;
+}
