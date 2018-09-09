@@ -2,20 +2,80 @@
 font-family: 'Rajdhani', sans-serif;*/
 /*Master container/ universal styles*/
 .master{
+  display: none;
   width: 100%;
   height: 1000px;
-  display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
 }
-*{
-  font-family: 'Orbitron', sans-serif;
+p{
+  font-family: 'Rajdhani', sans-serif;
+  color: white;
+}
+a{
+  text-decoration: none;
+  color: white;
+  font-family: 'Rajdhani', sans-serif;
+}
+/*navbar */
+.logo{
+  height: 70%;
+  width: auto;
+  margin-left: 5%;
+  margin-right: 2.5%;
+}
+.header{
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsla(195, 66%, 59%, .9);
+  position: fixed;
+  z-index: 5;
+  border-bottom: .125rem solid hsla(195, 14%, 30%, 1);
+}
+.headera{
+  display: inline-flex;
+  width: 50%;
+  height: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: hsla(207, 20%, 22%, .9);
+}
+.headerb{
+  display: inline-flex;
+  width: 50%;
+  height: 100%;
+  justify-content: flex-end;
+  justify-content: space-between;
+  align-items: center;
+  background-color:	hsla(207, 20%, 22%, .9);
+}
+.linkish{
+  display: inline-flex;
+  height: 100%;
+  width: 20%;
+  border: .125rem solid hsla(195, 14%, 30%, 1);
+  align-items: center;
+  justify-content: center;
+}
+.linkish:hover{
+  background-color: hsla(195, 14%, 20%, 1);
+  transition-property: background-color;
+  transition-duration: 1s;
+}
+.link{
+  text-align: center;
+}
+.home{
+  border-bottom: .125rem solid white;
 }
 /*first banner*/
 .mainstuff{
-  width: auto;
+  width: 100%;
   height: auto;
   padding: .5rem;
   display: flex;
@@ -26,13 +86,13 @@ font-family: 'Rajdhani', sans-serif;*/
   color: hsla(360, 100%, 100%, 1);
   font-weight: bold;
   font-size: 6rem;
-  z-index: 3;
+  z-index: 2;
   text-align: center;
   font-family: 'Orbitron', sans-serif;
 }
 .videocontainer{
   display: flex;
-  height: 100%;
+  height: 47.3rem;
   width: 100%;
   background-color: hsla(202, 100%, 50%, 1);
   justify-content: center;
@@ -41,7 +101,261 @@ font-family: 'Rajdhani', sans-serif;*/
 }
 video{
   height: auto;
-  width: 87.5rem;
+  width: 100%;
   opacity: .7;
   position: absolute;
+}
+/*secondbanner*/
+.bannerb{
+  opacity: 0;
+  display: flex;
+  width: 100%;
+  height: 120rem;
+  justify-content: center;
+  align-items: center;
+  background-color: hsla(194, 48%, 40%, 1);
+  flex-wrap: wrap;
+}
+.bannerb img{
+  position: absolute;
+  height: 40rem;
+  width: auto;
+  z-index: 0;
+}
+.bannerb h1{
+  color: white;
+  font-weight: bold;
+  font-size: 6rem;
+  z-index: 2;
+  text-align: center;
+  font-family: 'Orbitron', sans-serif;
+  display: block;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+.right{
+  display: inline-flex;
+  width: 49%;
+  height: 120rem;
+  flex-direction: column;
+  align-items: flex-start;
+  z-index: 2;
+}
+.left{
+  width: 49%;
+  height: 120rem;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-end;
+  z-index: 2;
+}
+.aa{
+  width: 40%;
+  height: 12rem;
+  background-color: white;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 3%;
+  margin: 3%;
+  border-radius: 5px;
+  box-shadow: 5px 10px hsla(0, 100%, 0%, .5);
+}
+.aal{
+  width: 40%;
+  height: 12rem;
+  background-color: white;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 3%;
+  margin: 3%;
+  border-radius: 5px;
+  box-shadow: 5px 10px hsla(0, 100%, 0%, .5);
+}
+.a{
+  width: 16rem;
+  height: auto;
+  font-family: 'Rajdhani', sans-serif;
+  background-color: white;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.a h1,
+.al h1{
+  color: black;
+  font-size: 1.2rem;
+  font-family: 'Orbitron', sans-serif;
+}
+.a p,
+.al p{
+  color: hsla(0, 100%, 10%, 1);
+}
+.al{
+  width: 16rem;
+  height: auto;
+  font-family: 'Rajdhani', sans-serif;
+  background-color: white;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.fa{
+  display: none;
+  font-size: 5rem;
+}
+.fa-dollar-sign{
+  color: green;
+}
+.fa-plug{
+  color: orange;
+}
+.fa-fast-forward{
+  color: black;
+}
+.fa-clock{
+  color: black;
+}
+.fa-calendar-check{
+  color: blue;
+}
+.fa-wifi{
+  color: aquamarine;
+}
+.fa-concierge-bell{
+  color: yellow;
+}
+.fa-wrench{
+  color: grey;
+}
+.fa-window-restore{
+  color: purple;
+}
+.fa-users{
+  color: rgba(0, 174, 255, 1);
+}
+/*weather button stuffs*/
+.bannerc{
+  opacity: 0;
+  width: 100%;
+  height: 50rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  flex-direction: column;
+}
+.bannerc .headingb{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 20rem;
+  margin: 0;
+}
+.bannerc .headingb h1{
+  color: black;
+  text-shadow: 4px 4px hsla(228, 7%, 23%, .7);
+  font-size: 7rem;
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: bold;
+}
+/*styling the first example box*/
+.weather .lefta h1{
+  font-size: 3rem;
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: bold;
+}
+.weather .button{
+  background-color: hsla(228, 7%, 23%, 1);
+  color: black;
+  text-align: center;
+  height: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.weather .button p{
+  font-family: 'Rajdhani', sans-serif;
+}
+.weather .button:hover{
+  background-color: hsla(228, 7%, 10%, 1);
+  margin-top: .65rem;
+  height: 2.5rem;
+  font-size: 1.3rem;
+  margin-bottom: .4rem;
+  transition: all .1s linear;
+}
+.lefta{
+  width: 50%;
+  height: 100%;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.weather{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  width: 80%;
+  height: 10rem;
+  background-image: url(https://localtvwqad.files.wordpress.com/2016/10/interactive-radar-clip.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px solid hsla(228, 7%, 23%, 1);
+  box-shadow: 5px 10px hsla(0, 100%, 0%, .5)
+}
+.weather .lefta div{
+  width: 80%
+}
+.imputs{
+  display: flex;
+  width: 100%;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+}
+input{
+  width: 50%;
+  color: black;
+}
+.righta p{
+  width: 80%;
+  text-align: center;
+  color: black;
+  font-weight: bold;
+  font-family: 'Orbitron', sans-serif;
+}
+.righta{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+}
+/*weather info display stuff*/
+.conditiona,
+.temp,
+.humidity{
+  height: 100%;
+  width: 20%;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border: 1px solid black;
+}
+.conditiona h1,
+.temp h1,
+.humidity h1{
+  border-bottom: 3px solid black;
+  color: black;
 }
