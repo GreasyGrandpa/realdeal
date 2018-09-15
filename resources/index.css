@@ -97,7 +97,7 @@ a{
 }
 .videocontainer{
   display: flex;
-  height: auto;
+  height: contain;
   width: 100%;
   background-color: hsla(202, 100%, 50%, 1);
   justify-content: center;
