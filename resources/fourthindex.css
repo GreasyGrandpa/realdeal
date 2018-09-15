@@ -74,6 +74,17 @@ a{
 .link{
   text-align: center;
 }
-.contact{
+.previous{
   border-bottom: .125rem solid white;
+}
+/*other non-navbar related stuffs*/
+.shame{
+  color: black;
+}
+.box{
+  width: 100%;
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
