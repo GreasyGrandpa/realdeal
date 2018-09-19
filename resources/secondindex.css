@@ -77,3 +77,22 @@ a{
 .contact{
   border-bottom: .125rem solid white;
 }
+.info{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50rem;
+  width: 100%;
+  z-index: 3;
+  position: absolute;
+  background-color: hsla(69, 0%, 50%, .4)
+}
+.info p{
+  color: black;
+}
+.background{
+  width: 100%;
+  height: auto;
+  position: absolute;
+  z-index: 1;
+}

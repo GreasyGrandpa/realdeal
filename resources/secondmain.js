@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).ready(function(){ 
   $('.master').ready(function(){
     $('.master').fadeIn(1000);
   });

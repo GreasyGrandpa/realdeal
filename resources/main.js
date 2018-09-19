@@ -3,6 +3,11 @@ var MatchGame = {};
 $(document).ready(function(){
   $('.master').ready(function(){
     $('.master').fadeIn(1000);
+    var height = $('video').css('height');
+    var Int = parseInt(height, 10);
+    var b = Int + 84.31;
+    var Height = b + "px"
+    $('.master').find('.placeholdera').html('<div style="height:' + b + ';" class="videocontainer"><div class="mainstuff"><h1>/Professional Web Development</h1></div><video autoplay="" muted="" loop=""><source src="https://www.codecademy.com/assets/marketing-pages/intensives/bws/coding-scenes-9a2031e8142b40bdb5d936d5eef33dfa.mp4" type="video/mp4"></video></div>')
   });
   $('.bannerb').mouseenter(function() {
     $(this).animate({'opacity':'1'}, 1000);
