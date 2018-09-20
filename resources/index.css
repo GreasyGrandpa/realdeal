@@ -530,3 +530,24 @@ input{
   color: rgb(255, 255, 255);
   cursor: pointer;
 }
+/*back to top button*/
+#myBtn{
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: rgb(32, 64, 86);
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 18px;
+  font-family: 'Rajdhani', sans-serif;
+}
+
+#myBtn:hover {
+    background-color: #555;
+}
